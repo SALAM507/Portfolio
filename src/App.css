@@ -37,7 +37,7 @@
   margin-bottom: 20px;
 }
 
-.links-container{
+.links-container {
   width: 250px;
   display: flex;
   justify-content: space-evenly;
@@ -45,12 +45,12 @@
 
 .links-container .content-link {
   color: #91aec4;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Add transform to the transition */
 }
 
 .links-container .content-link:hover {
   color: #FFFFFF; /* Hover color */
-  transition: color 0.25s ease-in-out;
+  transform: scale(1.1); /* Add scaling effect */
 }
 
 .content-link i {

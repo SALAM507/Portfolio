@@ -27,11 +27,11 @@ const MainPage = () => {
             <i className='bi bi-github'></i>
           </a>
 
-          <a href='mailto:shihabalam02@gmail.com' className= 'content-link'>
+          <a href='mailto:shihabalam02@gmail.com' className='content-link'>
             <i className='bi bi-envelope-fill'></i> 
           </a>
 
-          <a href='https://www.linkedin.com/in/shihabalam/' target='_blank' rel='noopener noreferrer' className= 'content-link'>
+          <a href='https://www.linkedin.com/in/shihabalam/' target='_blank' rel='noopener noreferrer' className='content-link'>
             <i className='bi bi-linkedin'></i>
           </a>
 
