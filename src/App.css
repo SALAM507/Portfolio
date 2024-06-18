@@ -1,0 +1,151 @@
+.html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #194569;
+}
+
+.site-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #194569;
+  /*background: linear-gradient(to bottom, #003459 0%, #007EA7 25%);*/
+  z-index: -1;
+}
+
+.title-box{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.title-text{
+  color: #FFFFFF;
+  font-size: 60px;
+  font-family: 'Modak', cursive;;
+  text-align: center;
+}
+
+
+.centered-section{
+  display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.links-container{
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links-container .content-link {
+  color: #91aec4;
+  transition: color 0.2s ease-in-out;
+}
+
+.links-container .content-link:hover {
+  color: #FFFFFF; /* Hover color */
+  transition: color 0.25s ease-in-out;
+}
+
+.content-link i {
+  font-size: 27px; /* Adjusts the size of the icons */
+}
+
+.about-me-section{
+  max-width: 750px;
+}
+.about-me-container{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  
+}
+
+.body-text{
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 17px;
+  transition: color 0.2s ease-in-out;
+}
+
+.link-text {
+  color: #91aec4; /* Text color */
+  text-decoration: none; /* Removes the default underline */
+  font-weight: 600; /* Your specified font weight */
+  display: inline-block; /* Ensures the pseudo-element aligns correctly */
+  position: relative; /* Necessary for positioning the pseudo-element */
+  overflow: hidden; /* Ensures the underline doesn't extend beyond the text */
+  transition: color 0.25s ease-in-out; /* Smooth transition for color change */
+  margin-bottom: -7px;
+}
+
+.link-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%; /* Starts with no visible underline */
+  bottom: 0;
+  height: 2px; /* Height of the underline */
+  background-color: #FFFFFF; /* Color of the underline, now matches hover text color */
+  transition: right 0.25s ease-in-out; /* Matches the timing of the text color transition */
+}
+
+.link-text:hover::after {
+  right: 0; /* Extends the underline across the element on hover */
+}
+
+.link-text:hover{
+  color: #FFFFFF;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-section{
+  display: flex;
+  justify-content: start;
+  padding-top: 20px;
+}
+.header-text{
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF ;
+}
+
+.projects-section{
+  max-width: 750px; /* Sets the maximum width */
+  width: 100%; /* Allows the width to shrink with the viewport */
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  justify-content: flex-start; /* Aligns children at the start vertically */
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+.project-card{
+  max-width: 650px; /* Sets the maximum width of the box */
+  width: 100%;
+  border: 3px solid #A8DADC; /* Adds a border with a light grey color */
+  border-radius: 10px; /* Makes the borders rounded */
+  padding: 20px; /* Adds padding inside the box */
+  margin: 20px auto; /* Centers the box horizontally and adds vertical spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  background: #FFFFFF; /* Optional: Sets a white background */
+  transition: border 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.project-card:hover{
+  border: 3px solid #457B9D;
+  background: #A8DADC;
+  
+}
+
+
+
