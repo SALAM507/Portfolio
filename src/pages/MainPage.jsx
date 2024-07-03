@@ -21,7 +21,7 @@ const MainPage = () => {
         </div> 
       </div>
 
-      <div className='centered-section body-text' style={{marginTop: '-10px', marginBottom: '10px', color: '#FFFFFF', textAlign: 'center'}}>
+      <div className='centered-section body-text' style={{marginTop: '-20px', marginBottom: '15px', color: '#FFFFFF', textAlign: 'center'}}>
         <div> Full Stack Developer</div>
       </div>
       
@@ -59,7 +59,7 @@ const MainPage = () => {
         <div className='about-me-container'>
           <div className='body-text'>
             
-            I'm a software engineer with a passion for full-stack development and creating impactful solutions. Currently, I'm a Full Stack Developer Intern at <a href="https://myerbuddy.com/" target="_blank" rel="noopener noreferrer" className= 'link-text'>ERBuddy</a>, where I’ve been building React Native apps and developing firmware for their Smart Pillbox.
+            I'm a software engineer with a passion for application development and creating impactful solutions. Currently, I'm a Full Stack Developer Intern at <a href="https://myerbuddy.com/" target="_blank" rel="noopener noreferrer" className= 'link-text'>ERBuddy</a>, where I’ve been building React Native apps and developing firmware for their Smart Pillbox.
 
           </div>
         </div>

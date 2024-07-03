@@ -29,7 +29,9 @@
 .title-box{
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
   flex-wrap: wrap;
 }
 
@@ -44,9 +46,7 @@
 .centered-section{
   display: flex;
   justify-content: center;
-  
   flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  padding-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -76,8 +76,7 @@
 .about-me-container{
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 20px;
-  
+  padding-bottom: 20px;
 }
 
 .body-text{
@@ -121,7 +120,6 @@
 .header-section{
   display: flex;
   justify-content: start;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 .header-text{
