@@ -1,3 +1,16 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
 .html, body {
   height: 100%;
   margin: 0;
@@ -23,7 +36,7 @@
 .title-text{
   color: #FFFFFF;
   font-size: 60px;
-  font-family: 'Modak', cursive;;
+  font-family: 'MuseoModerno', cursive;;
   text-align: center;
 }
 
@@ -71,7 +84,7 @@
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif; 
   font-size: 17px;
-  transition: color 0.2s ease-in-out;
+  
 }
 
 .link-text {
@@ -109,6 +122,7 @@
   display: flex;
   justify-content: start;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header-text{
   
@@ -129,23 +143,28 @@
   
 }
 
-.project-card{
+.project-card {
   max-width: 650px; /* Sets the maximum width of the box */
   width: 100%;
-  border: 3px solid #A8DADC; /* Adds a border with a light grey color */
+  border: 3px solid #91aec4; /* Adds a border with a light grey color */
   border-radius: 10px; /* Makes the borders rounded */
   padding: 20px; /* Adds padding inside the box */
-  margin: 20px auto; /* Centers the box horizontally and adds vertical spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-  background: #FFFFFF; /* Optional: Sets a white background */
-  transition: border 0.5s ease-in-out, background 0.5s ease-in-out;
-}
-
-.project-card:hover{
-  border: 3px solid #457B9D;
-  background: #A8DADC;
   
+  margin: 10px auto; /* Centers the box horizontally and adds vertical spacing */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the box */
+  background: #FFFFFF; /* Sets a white background */
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for border, shadow, and background */
 }
 
+.project-card:hover {
+  border: 3px solid #FFFFFF; /* Changes border color on hover */
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.5); /* Adds a white, more prominent shadow around the box on hover */
+}
+
+.project-description{
+  background-color: #194569;
+  border-radius: 10px;
+  padding: 15px;
+}
 
 

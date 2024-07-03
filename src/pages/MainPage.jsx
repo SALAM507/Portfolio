@@ -1,6 +1,12 @@
 import React from 'react';
+import ProjectCard from '../components/ProjectCard';
 import ERbuddyLogo from '../assets/ERbuddy.png';
-import reactLogo from '../assets/React.png'
+import reactLogo from '../assets/React.png';
+import tailwindLogo from '../assets/TailwindCSS.png';
+import AWSLogo from '../assets/AWS.png';
+import LocallyLogo from '../assets/Locally.png';
+import BootstrapLogo from '../assets/Bootstrap.png';
+import GoogleMapsLogo from '../assets/GoogleMaps.png';
 
 
 const MainPage = () => {
@@ -69,7 +75,7 @@ const MainPage = () => {
         <div className='about-me-container'>
           <div className='body-text'>
             
-            I'm pursuing a computer science degree at CUNY Hunter College, with skills in C++, Python, JavaScript, React, and more. Outside of work, I love basketball, video games, and everything related to airplanes.
+            I'm pursuing a computer science degree at CUNY Hunter College, with skills in C++, Python, JavaScript, React, and more. Outside of work, I love basketball, video games, and my two geckos Noodles and Rango.
 
           </div>
         </div>
@@ -97,35 +103,28 @@ const MainPage = () => {
           </div>
         </div>
 
-        <div className='project-card'>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="row">
-                  <div className="col-12">
-                    <div className="p-2 text-white">
+        <ProjectCard 
+        link="https://myerbuddy.com/"
+        mainImage={{ src: ERbuddyLogo, alt: "ERBuddy Logo" }}
+        logos={[
+          { src: reactLogo, alt: "React Logo" },
+          { src: tailwindLogo, alt: "Tailwind CSS Logo" },
+          { src: AWSLogo, alt: "AWS Logo" }
+        ]}
+        description="Built and deployed a React app on AWS S3, managing DNS with Route53 and CloudFront, and SSL certification. Debugged and reconfigured to users feedback."
+        />
 
-                      <img src={ERbuddyLogo} style={{width: '150px'}} alt="ERBuddy Logo"/>
+        <ProjectCard 
+        link="https://myerbuddy.com/"
+        mainImage={{ src: LocallyLogo, alt: "Locally Logo", style: {width: '180px'} }}
+        logos={[
+          { src: reactLogo, alt: "React Logo" },
+          { src: BootstrapLogo, alt: "Bootstrap Logo"},
+          { src: GoogleMapsLogo, alt: "Google Maps Logo" }
+        ]}
+        description="Built a React app using Google Maps API and MongoDB, allowing users to pin local spots and describe neighborhood events."
+        />
 
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-12">
-                    <div className=" text-white">
-
-                    <img src={reactLogo} style={{width: '25px'}} alt="ERBuddy Logo"/>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="p-3 mb-2 bg-success text-white">Column 2</div>
-              </div>
-            </div>
-          </div>
-        </div>
           
         </div>
       </div>
